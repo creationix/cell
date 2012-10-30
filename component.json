@@ -1,0 +1,12 @@
+{
+  "name": "cell",
+  "description": "A web component to fill space with a color while developing",
+  "version": "0.0.1",
+  "main": "cell.js",
+  "scripts": [
+    "cell.js"
+  ],
+  "styles": [
+    "cell.css"
+  ]
+}
