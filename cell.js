@@ -1,10 +1,12 @@
 var hue = 0;
 
 exports.Cell = Cell;
-function Cell() {
+function Cell(autoColor) {
   this.el = document.createElement("div");
-  var color = "hsl(" + (hue = (hue + 47) % 360) + ", 50%, 80%)";
-  this.el.style.backgroundColor = color;
+  if (autoColor) {
+    var color = "hsl(" + (hue = (hue + 47) % 360) + ", 50%, 80%)";
+    this.el.style.backgroundColor = color;
+  }
 }
 
 Cell.prototype.resize = function (width, height) {
